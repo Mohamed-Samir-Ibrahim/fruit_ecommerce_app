@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_ecommerce_app/core/helper_functions/on_generate_routes.dart';
-import 'package:fruit_ecommerce_app/feature/onBoarding/presentation/onBoarding.dart';
+import 'package:fruit_ecommerce_app/feature/splash/presentation/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       onGenerateRoute: onGenerateRoute,
-      initialRoute: OnBoardingView.routeName,
+      initialRoute: SplashView.routeName,
     );
   }
 }
