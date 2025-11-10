@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:fruit_ecommerce_app/feature/onBoarding/presentation/onBoarding.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -15,8 +16,9 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 5), () =>
-        Navigator.push(
-          context, MaterialPageRoute(builder: (context) => Scaffold(),),),);
+        Navigator.pushAndRemoveUntil(
+          context, MaterialPageRoute(builder: (context) => OnBoardingView(),), (
+            route) => false,),);
   }
   @override
   Widget build(BuildContext context) {
