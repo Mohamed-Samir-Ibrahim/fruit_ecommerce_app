@@ -15,10 +15,10 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () =>
-        Navigator.pushAndRemoveUntil(
-          context, MaterialPageRoute(builder: (context) => OnBoardingView(),), (
-            route) => false,),);
+    Timer(Duration(seconds: 5), () => Navigator.pushNamedAndRemoveUntil(
+        context,
+        OnBoardingView.routeName,
+        (route) => false,),);
   }
   @override
   Widget build(BuildContext context) {
