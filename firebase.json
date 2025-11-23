@@ -1,0 +1,22 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "frutella-22c37",
+          "appId": "1:17440519606:android:304a58f34a9f44830dbd17",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "frutella-22c37",
+          "configurations": {
+            "android": "1:17440519606:android:304a58f34a9f44830dbd17",
+            "ios": "1:17440519606:ios:9d193ae0b9e672db0dbd17"
+          }
+        }
+      }
+    }
+  }
+}

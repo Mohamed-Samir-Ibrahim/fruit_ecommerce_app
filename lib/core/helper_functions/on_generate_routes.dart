@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_ecommerce_app/feature/forget_password/presentation/view/forget_password_screen.dart';
 import 'package:fruit_ecommerce_app/feature/login/presentation/view/login_screen.dart';
 import 'package:fruit_ecommerce_app/feature/onBoarding/presentation/onBoarding.dart';
+import 'package:fruit_ecommerce_app/feature/register/presentation/view/register_screen.dart';
 import 'package:fruit_ecommerce_app/feature/splash/presentation/splash_view.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings settings){
@@ -11,6 +13,10 @@ Route<dynamic> onGenerateRoute(RouteSettings settings){
       return MaterialPageRoute(builder: (context) => OnBoardingView(),);
     case LoginScreen.routeName:
       return MaterialPageRoute(builder: (context) => LoginScreen(),);
+    case RegisterScreen.routeName:
+      return MaterialPageRoute(builder: (context) => RegisterScreen(),);
+    case ForgetPasswordScreen.routeName:
+      return MaterialPageRoute(builder: (context) => ForgetPasswordScreen(),);
     default:
       return MaterialPageRoute(builder: (context) => Scaffold(),);
   }
