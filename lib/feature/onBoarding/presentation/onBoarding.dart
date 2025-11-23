@@ -90,16 +90,16 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               padding: EdgeInsets.symmetric(vertical: MediaQuery
                   .of(context)
                   .size
-                  .height * 0.030),
+                  .height * 0.025),
               child: Column(
-                mainAxisSize: MainAxisSize.max,
+                //mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   SizedBox(height: MediaQuery
                       .of(context)
                       .size
-                      .height * 0.04),
+                      .height * 0.02),
                   Expanded(
                     child: PageView(
                       controller: _pageController,
@@ -112,56 +112,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             Positioned(
               left: 0,
               right: 0,
-              bottom: 0,
+              bottom: 10,
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // Text(
-                    //   (onboardingPages(context)[_currentPage]
-                    //   as OnboardingCard)
-                    //       .title,
-                    //   textAlign: TextAlign.center,
-                    //   style: TextStyle(
-                    //     color: Colors.white,
-                    //     fontSize: MediaQuery.of(
-                    //       context,
-                    //     ).textScaler.scale(25),
-                    //     fontWeight: FontWeight.bold,
-                    //   ),
-                    // ),
-                    // SizedBox(height: MediaQuery.of(context).size.height * 0.01),
-                    // FittedBox(
-                    //   child: Text(
-                    //     '',
-                    //     textAlign: TextAlign.center,
-                    //     style: TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: MediaQuery.of(
-                    //         context,
-                    //       ).textScaler.scale(16),
-                    //       fontWeight: FontWeight.w400,
-                    //     ),
-                    //   ),
-                    // ),
-                    // FittedBox(
-                    //   child: Padding(
-                    //     padding: const EdgeInsets.symmetric(
-                    //       horizontal: 8,
-                    //     ),
-                    //     child: Text(
-                    //       '',
-                    //       textAlign: TextAlign.center,
-                    //       style: TextStyle(
-                    //         color: Colors.white,
-                    //         fontSize: MediaQuery.of(
-                    //           context,
-                    //         ).textScaler.scale(16),
-                    //         fontWeight: FontWeight.w400,
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
                     SizedBox(height: MediaQuery
                         .of(context)
                         .size
